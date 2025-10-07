@@ -190,14 +190,14 @@
 					</div>
 				</div>
 
-				<div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+				<!-- <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
 					<h2 class="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">Focus</h2>
 					<ul class="mt-4 space-y-2 text-sm text-slate-600">
 						<li>Election readiness and field coordination platforms</li>
 						<li>Tender and charity operations dashboards</li>
 						<li>Automation loops for reporting and comms</li>
 					</ul>
-				</div>
+				</div> -->
 			</div>
 		</section>
 
