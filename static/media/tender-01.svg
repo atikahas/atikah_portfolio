@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+    <linearGradient id="b" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="rgba(148, 163, 184, 0.25)" />
+      <stop offset="100%" stop-color="rgba(59, 130, 246, 0.35)" />
+    </linearGradient>
+    <linearGradient id="c" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(248, 250, 252, 0.8)" />
+      <stop offset="100%" stop-color="rgba(148, 163, 184, 0.2)" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="36" fill="url(#a)" />
+  <rect x="120" y="120" width="960" height="480" rx="24" fill="rgba(15, 23, 42, 0.65)" stroke="rgba(148, 163, 184, 0.4)" />
+  <rect x="160" y="168" width="280" height="32" rx="16" fill="rgba(248, 250, 252, 0.85)" />
+  <rect x="160" y="224" width="880" height="56" rx="16" fill="rgba(30, 41, 59, 0.9)" />
+  <rect x="160" y="300" width="880" height="232" rx="20" fill="url(#b)" />
+  <rect x="192" y="332" width="816" height="72" rx="14" fill="rgba(15, 23, 42, 0.25)" />
+  <rect x="192" y="420" width="184" height="72" rx="14" fill="url(#c)" />
+  <rect x="400" y="420" width="184" height="72" rx="14" fill="rgba(15, 23, 42, 0.25)" />
+  <rect x="608" y="420" width="184" height="72" rx="14" fill="rgba(15, 23, 42, 0.25)" />
+  <rect x="816" y="420" width="184" height="72" rx="14" fill="rgba(15, 23, 42, 0.25)" />
+  <g fill="rgba(248, 250, 252, 0.88)" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="176" y="192" font-size="18" font-weight="600" letter-spacing="5">TENDER DASHBOARD</text>
+    <text x="184" y="254" font-size="20" font-weight="500" letter-spacing="1">Weekly pipeline · Strategic bids · Processing status</text>
+    <text x="208" y="376" font-size="16" font-weight="600">Company</text>
+    <text x="456" y="376" font-size="16" font-weight="600">Status</text>
+    <text x="672" y="376" font-size="16" font-weight="600">Value (MYR)</text>
+    <text x="880" y="376" font-size="16" font-weight="600">Owner</text>
+    <text x="208" y="464" font-size="14" font-weight="500">Alpha Allied Sdn Bhd</text>
+    <text x="416" y="464" font-size="14" font-weight="500">Evaluating</text>
+    <text x="624" y="464" font-size="14" font-weight="600">2.1M</text>
+    <text x="840" y="464" font-size="14" font-weight="500">Noraini</text>
+  </g>
+</svg>

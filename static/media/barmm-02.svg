@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="a" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="36" fill="url(#a)" />
+  <rect x="148" y="148" width="904" height="424" rx="28" fill="rgba(15, 118, 110, 0.35)" stroke="rgba(45, 212, 191, 0.45)" />
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" fill="rgba(226, 252, 236, 0.9)">
+    <text x="192" y="208" font-size="20" font-weight="600" letter-spacing="4">FIELD COORDINATION WORKFLOW</text>
+    <text x="192" y="236" font-size="13" opacity="0.7">Assignments, checkpoints, and quick escalations</text>
+  </g>
+  <rect x="192" y="268" width="824" height="72" rx="18" fill="rgba(15, 23, 42, 0.55)" />
+  <rect x="192" y="364" width="824" height="72" rx="18" fill="rgba(15, 23, 42, 0.55)" />
+  <rect x="192" y="460" width="824" height="72" rx="18" fill="rgba(15, 23, 42, 0.55)" />
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" fill="rgba(226, 252, 236, 0.85)">
+    <text x="212" y="312" font-size="16" font-weight="600">Assignment · Ward 14 verification</text>
+    <text x="212" y="330" font-size="13" opacity="0.75">Team lead: Siti · Due in 2h · Status: On site</text>
+    <text x="212" y="408" font-size="16" font-weight="600">Assignment · Supply drop checkpoint</text>
+    <text x="212" y="426" font-size="13" opacity="0.75">Team lead: Mario · Due in 4h · Status: En route</text>
+    <text x="212" y="504" font-size="16" font-weight="600">Escalation · Connectivity fallback</text>
+    <text x="212" y="522" font-size="13" opacity="0.75">Team lead: Aisha · Due in 1h · Status: Waiting vendor</text>
+  </g>
+  <rect x="752" y="288" width="224" height="32" rx="16" fill="rgba(45, 212, 191, 0.4)" />
+  <rect x="752" y="384" width="224" height="32" rx="16" fill="rgba(253, 230, 138, 0.4)" />
+  <rect x="752" y="480" width="224" height="32" rx="16" fill="rgba(248, 113, 113, 0.4)" />
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-weight="600" font-size="13">
+    <text x="772" y="309" fill="rgba(13, 148, 136, 0.9)">Ready for review</text>
+    <text x="772" y="405" fill="rgba(180, 83, 9, 0.9)">Monitoring route</text>
+    <text x="772" y="501" fill="rgba(220, 38, 38, 0.9)">Needs response</text>
+  </g>
+  <g font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" fill="rgba(226, 252, 236, 0.8)" font-size="12">
+    <text x="192" y="564">Comments: Fallback LTE router ready. Logistics confirming drop-off ETA.</text>
+  </g>
+</svg>
