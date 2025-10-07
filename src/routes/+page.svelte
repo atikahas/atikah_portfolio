@@ -77,17 +77,6 @@
 			role: 'Web Application Development',
 			brief:
 				'Digital platform centralising company profiles, tender participation, and project tracking with automated listings and performance analytics.',
-			preview: {
-				title: 'Tender velocity',
-				metricLabel: 'Active tenders',
-				metricValue: '124',
-				subtitle: '98% uptime · 4 agencies',
-				code: [
-					'GET /api/tenders?status=active',
-					'200 OK · 124 results · 92ms',
-					'stream.sync() → Supabase realtime channel'
-				]
-			},
 			contributions: [
 				'Conducted stakeholder interviews to capture requirements and prioritise feature rollout.',
 				'Architected the system and database schema from first principles.',
@@ -102,17 +91,6 @@
 			role: 'Web Application Development',
 			brief:
 				'Mission support system for regional election operations with tiered access, voter data collection, and field coordination tooling.',
-			preview: {
-				title: 'Field ops status',
-				metricLabel: 'Precincts synced',
-				metricValue: '312',
-				subtitle: 'Live in BARMM',
-				code: [
-					'POST /ops/pulse { precinct: 312 }',
-					'Queue: worker@edge • latency 110ms',
-					'emit("status-update") → coordinator dashboard'
-				]
-			},
 			contributions: [
 				'Interviewed administrators and ground coordinators to refine workflows and permissions.',
 				'Designed architecture and database schema for scalable field data capture.',
@@ -127,17 +105,6 @@
 			role: 'Web Application Development',
 			brief:
 				'Comprehensive application enabling multi-tiered election operations, data integrity, and streamlined workflows for national stakeholders.',
-			preview: {
-				title: 'Election timeline',
-				metricLabel: 'Ballots secured',
-				metricValue: '98.7%',
-				subtitle: 'Integrity score',
-				code: [
-					'SELECT COUNT(*) FROM ballots WHERE verified = 1;',
-					'Integrity score => 0.98731',
-					'notify("ops-channel", payload)'
-				]
-			},
 			contributions: [
 				'Partnered with stakeholders to formalise requirements and risk scenarios.',
 				'Engineered architecture, tech selections, and database design.',
@@ -152,17 +119,6 @@
 			role: 'Web Application & Automation Development',
 			brief:
 				'Platform supporting physical and online auctions, tracking interests, purchases, sales, and surfacing best-price opportunities with automated updates.',
-			preview: {
-				title: 'Auction radar',
-				metricLabel: 'Deals flagged',
-				metricValue: '42',
-				subtitle: 'Daily digest',
-				code: [
-					'fetchDeals({ maxPrice: 85000, region: "JP" })',
-					'Bot → telegram.chat#carops • 07:30 MYT',
-					'alert: Skyline 2019 · condition A · RM78k'
-				]
-			},
 			contributions: [
 				'Facilitated discovery sessions with key stakeholders to understand deal flows.',
 				'Designed the system architecture and schema for global auction data.',
@@ -177,17 +133,6 @@
 			role: 'Web Application Development',
 			brief:
 				'Operations console managing beneficiaries, charitable events, and distributed gifts for a nationwide foundation.',
-			preview: {
-				title: 'Impact overview',
-				metricLabel: 'Families supported',
-				metricValue: '1,860',
-				subtitle: 'Across 14 districts',
-				code: [
-					'GET /reports/donations?period=Q3',
-					'Highcharts.render("gift-supply")',
-					'sendDigest(to: trustees@yayasan.my)'
-				]
-			},
 			contributions: [
 				'Gathered requirements with program leads to map workflows.',
 				'Designed architecture, technology stack, and schema for reliable tracking.',
@@ -202,17 +147,6 @@
 			role: 'Web Application Development',
 			brief:
 				'Web platform powering on-ground data collection, analytics, and command dashboards for national election coordination.',
-			preview: {
-				title: 'Command centre',
-				metricLabel: 'Constituencies reporting',
-				metricValue: '87%',
-				subtitle: 'Live sync · 3m refresh',
-				code: [
-					'cron("summary-job", */3 min)',
-					'aggregate(constituency.status) => feed',
-					'dispatch("command-centre", payload)'
-				]
-			},
 			contributions: [
 				'Interviewed field agents to design data capture workflows and offline contingencies.',
 				'Planned system architecture and database schema tailored for rapid reporting.',
@@ -227,17 +161,6 @@
 			role: 'Web Application Development',
 			brief:
 				'Coordination platform for strategic planning, field data capture, and analytics dashboards supporting leadership decisions.',
-			preview: {
-				title: 'Strategy signals',
-				metricLabel: 'Priority alerts',
-				metricValue: '19',
-				subtitle: 'Escalated today',
-				code: [
-					'watchers > threshold ⇒ trigger("priority-alert")',
-					'Dashboard badge: HOT · region=NE',
-					'slack.notify("#mic-war-room", summary)'
-				]
-			},
 			contributions: [
 				'Partnered with on-ground teams to capture operational needs.',
 				'Defined architecture, technology choices, and schema supporting rapid insights.',
@@ -252,17 +175,6 @@
 			role: 'Web Application Development',
 			brief:
 				'Website overhaul delivering updated design, improved functionality, and responsive experiences for property stakeholders.',
-			preview: {
-				title: 'Resort showcase',
-				metricLabel: 'Bookings uplift',
-				metricValue: '+34%',
-				subtitle: 'After launch',
-				code: [
-					'Hero.refresh({ ambientGlow: true })',
-					'LCP => 1.9s · 98 Lighthouse score',
-					'CMS.publish("staycation-packages")'
-				]
-			},
 			contributions: [
 				'Captured requirements with estate stakeholders to align vision and content.',
 				'Planned architecture, selected technologies, and structured the build roadmap.',
@@ -355,13 +267,11 @@
 </script>
 
 <div class="relative min-h-screen bg-black text-slate-200">
-	<div
-		class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(168,85,247,0.18),_transparent_55%)]"
-	/>
+	<div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(168,85,247,0.18),_transparent_55%)]"></div>
 	<div
 		class="absolute -top-32 left-1/2 -z-10 h-64 w-[40rem] -translate-x-1/2 rounded-full blur-3xl"
-		style="background: radial-gradient(circle, rgba(168, 85, 247, 0.35) 0%, rgba(37, 0, 63, 0) 60%);"
-	/>
+		style="background: radial-gradient(circle, rgba(168, 85, 247, 0.35) 0%, rgba(37, 0, 63, 0) 60%);">
+	</div>
 
 	<header class="sticky top-0 z-20 border-b border-purple-500/20 bg-black/70 backdrop-blur">
 		<div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
@@ -385,7 +295,7 @@
 		<section id="profile" class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr]">
 			<div class="space-y-8">
 				<div class="inline-flex items-center gap-2 rounded-full border border-purple-500/40 px-3 py-1 text-xs uppercase tracking-[0.35em] text-purple-300">
-					<span class="h-2 w-2 animate-pulse rounded-full bg-purple-400" />
+					<span class="h-2 w-2 animate-pulse rounded-full bg-purple-400"></span>
 					Open to IT roles
 				</div>
 				<div class="space-y-4">
@@ -440,9 +350,25 @@
 			</div>
 
 			<div class="relative">
-				<div
-					class="absolute -inset-6 -z-10 rounded-[30px] bg-gradient-to-br from-purple-500/25 via-purple-900/10 to-transparent blur-3xl"
-				/>
+				<div class="pointer-events-none absolute -top-10 -right-8 hidden md:block">
+					<svg
+						class="h-32 w-32 orbit-spin text-purple-400/30"
+						viewBox="0 0 120 120"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="1.2"
+						aria-hidden="true"
+					>
+						<circle cx="60" cy="60" r="48" stroke-dasharray="6 6" />
+						<circle cx="60" cy="60" r="32" stroke-dasharray="4 4" opacity="0.7" />
+						<path d="M15 60c12-20 42-48 90-30" opacity="0.6" />
+						<path d="M18 82c24 10 60 15 84-18" opacity="0.35" />
+						<circle cx="28" cy="46" r="3" fill="currentColor" opacity="0.7" />
+						<circle cx="92" cy="70" r="4" fill="currentColor" opacity="0.5" />
+						<circle cx="76" cy="28" r="2.5" fill="currentColor" opacity="0.6" />
+					</svg>
+				</div>
+				<div class="absolute -inset-6 -z-10 rounded-[30px] bg-gradient-to-br from-purple-500/25 via-purple-900/10 to-transparent blur-3xl"></div>
 				<div class="overflow-hidden rounded-[26px] border border-purple-500/30 bg-black/60 shadow-[0_0_35px_rgba(168,85,247,0.15)]">
 					<div class="border-b border-purple-500/20 px-6 py-4">
 						<p class="text-xs uppercase tracking-[0.4em] text-purple-200">Current Focus</p>
@@ -520,7 +446,22 @@
 			</div>
 		</section>
 
-		<section id="projects" class="space-y-10">
+		<section id="projects" class="relative space-y-10">
+			<div class="pointer-events-none absolute -top-16 left-0 hidden md:block">
+				<svg
+					class="h-28 w-28 float-arc text-purple-400/25"
+					viewBox="0 0 120 120"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1"
+					aria-hidden="true"
+				>
+					<path d="M10 80 Q60 10 110 80" stroke-dasharray="10 8" />
+					<path d="M22 92 Q60 40 98 92" opacity="0.5" stroke-dasharray="6 6" />
+					<circle cx="34" cy="70" r="3" fill="currentColor" opacity="0.7" />
+					<circle cx="86" cy="68" r="4" fill="currentColor" opacity="0.6" />
+				</svg>
+			</div>
 			<div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
 				<h2 class="text-3xl font-semibold text-white md:text-4xl">Highlighted case studies</h2>
 				<p class="max-w-xl text-sm text-slate-400 md:text-right">
@@ -531,30 +472,6 @@
 			<div class="grid gap-8 md:grid-cols-2">
 				{#each projects as project}
 					<article class="flex h-full flex-col gap-5 rounded-3xl border border-purple-500/30 bg-black/60 p-6 shadow-[0_0_25px_rgba(168,85,247,0.08)] transition hover:border-purple-300/60 hover:shadow-[0_0_45px_rgba(168,85,247,0.25)]">
-						{#if project.preview}
-							<figure class="relative overflow-hidden rounded-2xl border border-purple-500/30 bg-gradient-to-br from-purple-500/10 via-purple-900/20 to-transparent p-5">
-								<div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(168,85,247,0.45),_transparent_60%)] blur-2xl" />
-								<div class="relative flex h-40 flex-col justify-between text-purple-100">
-									<div class="flex items-center justify-between text-[0.65rem] uppercase tracking-[0.4em]">
-										<span>{project.preview.title}</span>
-										<span>{project.preview.metricLabel}</span>
-									</div>
-									<div>
-										<div class="text-3xl font-semibold text-white">{project.preview.metricValue}</div>
-										{#if project.preview.subtitle}
-											<p class="mt-1 text-[0.7rem] uppercase tracking-[0.3em] text-purple-200">
-												{project.preview.subtitle}
-											</p>
-										{/if}
-									</div>
-									<div class="rounded-xl border border-purple-500/40 bg-black/60 p-3 font-mono text-[0.7rem] leading-relaxed text-purple-100 shadow-[0_10px_35px_rgba(168,85,247,0.15)]">
-										{#each project.preview.code as line}
-											<div>{line}</div>
-										{/each}
-									</div>
-								</div>
-							</figure>
-						{/if}
 						<div class="space-y-2">
 							<p class="text-xs uppercase tracking-[0.35em] text-purple-300">{project.role}</p>
 							<h3 class="text-xl font-semibold text-white">{project.name}</h3>
@@ -563,7 +480,7 @@
 						<ul class="space-y-2 text-sm text-slate-300">
 							{#each project.contributions as contribution}
 								<li class="flex gap-3">
-									<span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-purple-400" />
+									<span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-purple-400"></span>
 									<span>{contribution}</span>
 								</li>
 							{/each}
@@ -618,7 +535,7 @@
 						<ul class="mt-6 space-y-3 text-sm text-slate-300">
 							{#each role.highlights as item}
 								<li class="flex gap-3">
-									<span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-purple-400" />
+									<span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-purple-400"></span>
 									<span>{item}</span>
 								</li>
 							{/each}
@@ -700,3 +617,33 @@
 		</div>
 	</footer>
 </div>
+
+<style>
+	:global(.orbit-spin) {
+		animation: orbit-spin 28s linear infinite;
+		transform-origin: 50% 50%;
+	}
+
+	@keyframes orbit-spin {
+		from {
+			transform: rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	:global(.float-arc) {
+		animation: float-arc 12s ease-in-out infinite;
+	}
+
+	@keyframes float-arc {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(12px);
+		}
+	}
+</style>
