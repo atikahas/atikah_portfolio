@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="alert-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="40" fill="url(#alert-bg)" />
+  <rect x="140" y="120" width="920" height="480" rx="30" fill="rgba(2,6,23,0.75)" stroke="rgba(125,211,252,0.4)" />
+  <rect x="180" y="160" width="300" height="48" rx="16" fill="rgba(14,165,233,0.15)" />
+  <rect x="500" y="160" width="240" height="48" rx="16" fill="rgba(14,165,233,0.15)" />
+  <rect x="760" y="160" width="240" height="48" rx="16" fill="rgba(14,165,233,0.15)" />
+  <g font-family="Inter, sans-serif" fill="rgba(241,245,249,0.92)">
+    <text x="200" y="190" font-size="18" font-weight="600" letter-spacing="4">ALERT AUTOMATION</text>
+    <text x="200" y="240" font-size="16" font-weight="600">Keyword clusters</text>
+  </g>
+  <rect x="180" y="260" width="840" height="100" rx="20" fill="rgba(14,165,233,0.25)" />
+  <rect x="180" y="380" width="840" height="180" rx="24" fill="rgba(15,23,42,0.6)" />
+  <circle cx="230" cy="310" r="26" fill="#0ea5e9" />
+  <circle cx="230" cy="430" r="26" fill="#38bdf8" />
+  <circle cx="230" cy="510" r="26" fill="#fbbf24" />
+  <g font-family="Inter, sans-serif" fill="rgba(241,245,249,0.92)" font-size="15">
+    <text x="280" y="316">Election safeguards · 423 triggers</text>
+    <text x="280" y="436">Flood mitigation · 188 triggers</text>
+    <text x="280" y="516">Energy subsidy · 92 triggers</text>
+  </g>
+  <g fill="none" stroke="#0ea5e9" stroke-width="2" stroke-dasharray="8 8">
+    <path d="M230 286v-46" />
+    <path d="M230 334v160" />
+    <path d="M230 466v40" />
+  </g>
+  <g fill="rgba(241,245,249,0.82)" font-family="Inter, sans-serif" font-size="13">
+    <text x="320" y="470">Route: Ops chat · Email brief · SMS lead</text>
+    <text x="320" y="550">Route: Ops chat · API hook</text>
+  </g>
+</svg>

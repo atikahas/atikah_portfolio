@@ -24,48 +24,50 @@
 		{ title: 'Product Delivery', description: 'Scoped and shipped 8+ end-to-end web products for civic and enterprise teams.' },
 		{ title: 'Data & Reporting', description: 'Metabase, Supabase, Highcharts, and custom dashboards for quick-read metrics.' },
 		{ title: 'Integration Work', description: 'REST APIs, secure auth, Telegram bots, and automated reporting loops.' },
-		{ title: 'Steady Operations', description: 'Deployment on Cloudflare & Shinjiru, monitoring, documentation, and training.' }
+		{ title: 'Steady Operations', description: 'Deployment on Cloudflare, monitoring, documentation, and training.' }
 	];
 
 	const projects = [
 		{
-			name: 'Tender Management Platform',
-			role: 'Lead developer',
-			impact: 'Centralised tender listings, company profiles, and reporting so managers stopped relying on spreadsheets.',
-			stack: ['Laravel 10', 'MySQL', 'Tailwind', 'Metabase'],
+			name: 'Beritafy · News Monitoring',
+			role: 'SvelteKit & data engineer',
+			impact: 'A newsroom console for tracking 30+ Malaysian outlets, mapping keywords to risk levels, and briefing stakeholders via dashboards and email digests.',
+			stack: ['SvelteKit', 'Cloudflare', 'MySQL'],
+			link: 'https://beritafy.pages.dev',
 			media: [
-				{ src: '/media/tender-01.svg', alt: 'Tender platform dashboard snapshot' },
-				{ src: '/media/tender-02.svg', alt: 'Tender submission filtering view' }
+				{
+					src: '/selected-project-img/beritafy.png',
+					alt: 'Beritafy live news stream board',
+					caption: 'Live stream Malaysian news'
+				}
 			]
 		},
 		{
-			name: 'BARMM Election Operations',
-			role: 'Full-stack developer',
-			impact: 'Delivered voter data collection and field coordination tools used during regional election prep.',
-			stack: ['Laravel 10', 'SQL', 'Role-based access'],
+			name: 'AI Creator Studio',
+			role: 'Laravel 12 product engineer',
+			impact: 'Self-serve AI prompt builder for campaign teams with queueing, audit logs, and Cloudflare edge caching so editors can ship visuals in minutes.',
+			stack: ['Laravel 12', 'MySQL', 'Cloudflare'],
+			link: 'https://magika.plitix.com',
 			media: [
-				{ src: '/media/barmm-01.svg', alt: 'Election operations status board' },
-				{ src: '/media/barmm-02.svg', alt: 'Field coordination workflow screen' }
+				{
+					src: '/selected-project-img/magika.png',
+					alt: 'AI Creator Studio workbench UI',
+					caption: 'Modular prompt workbench'
+				}
 			]
 		},
 		{
-			name: 'Global Car Trading & Telegram Bot',
-			role: 'Backend & automation',
-			impact: 'Automated daily deal summaries and tracked transactions across physical and online auctions.',
-			stack: ['Laravel 9', 'SQL', 'Telegram Bot'],
+			name: 'Countdown Template',
+			role: 'SvelteKit front-end',
+			impact: 'Reusable microsite countdown generator for launches and seasonal events deployed on GitLab Pages with configurable palette, messaging, and analytics hooks.',
+			stack: ['SvelteKit', 'GitLab Pages'],
+			link: 'https://2024-countdown-e826dc.gitlab.io',
 			media: [
-				{ src: '/media/car-trading-01.svg', alt: 'Car trading inventory overview' },
-				{ src: '/media/car-trading-02.svg', alt: 'Telegram automation handoff flow' }
-			]
-		},
-		{
-			name: 'Election Readiness Toolkit',
-			role: 'Product developer',
-			impact: 'Live dashboards and AI summaries that help leadership monitor nationwide field updates.',
-			stack: ['Laravel 10', 'Supabase', 'Highcharts'],
-			media: [
-				{ src: '/media/election-toolkit-01.svg', alt: 'Election readiness summary dashboard' },
-				{ src: '/media/election-toolkit-02.svg', alt: 'Incident log and alert feed' }
+				{
+					src: '/selected-project-img/countdown.png',
+					alt: 'Countdown template hero with timer',
+					caption: 'Hero block with milestone timer'
+				}
 			]
 		}
 	];
@@ -221,8 +223,8 @@
 				<h2 class="text-2xl font-semibold text-slate-900">Selected projects</h2>
 				<p class="max-w-2xl text-sm text-slate-600">Real deliverables that moved teams forward.</p>
 			</div>
-			<div class="space-y-5">
-				{#each projects as project}
+			<div class="grid gap-5 md:grid-cols-2">
+				{#each projects as project, index}
 					<article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
 						<div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
 							<div>
@@ -236,6 +238,64 @@
 							</div>
 						</div>
 						<p class="mt-3 text-sm text-slate-600">{project.impact}</p>
+						{#if project.link}
+							<a
+								class="mt-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-900 hover:underline"
+								href={project.link}
+								target="_blank"
+								rel="noreferrer"
+							>
+								Visit Site
+								<span aria-hidden="true">↗</span>
+							</a>
+						{/if}
+						{#if project.media?.length}
+							<figure class="mt-5 space-y-3">
+								<div class="relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+									<img
+										class="h-64 w-full object-cover"
+										src={project.media[activeSlides[index]]?.src}
+										alt={project.media[activeSlides[index]]?.alt}
+										loading="lazy"
+									/>
+									{#if project.media[activeSlides[index]]?.caption}
+										<div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-900/70 to-transparent px-4 pb-4 pt-16 text-xs font-semibold uppercase tracking-[0.3em] text-white/80">
+											{project.media[activeSlides[index]].caption}
+										</div>
+									{/if}
+								</div>
+								{#if project.media.length > 1}
+									<div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+										<div class="flex gap-2">
+											{#each project.media as _, mediaIndex}
+												<button
+													type="button"
+													class={`h-1.5 w-6 rounded-full transition ${activeSlides[index] === mediaIndex ? 'bg-slate-900' : 'bg-slate-200'}`}
+													on:click={() => goToSlide(index, mediaIndex)}
+													aria-label={`Show preview ${mediaIndex + 1} for ${project.name}`}
+												></button>
+											{/each}
+										</div>
+										<div class="flex gap-2">
+											<button
+												type="button"
+												class="rounded-full border border-slate-300 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-slate-600 transition hover:border-slate-400 hover:text-slate-900"
+												on:click={() => goToPrev(index)}
+											>
+												Prev
+											</button>
+											<button
+												type="button"
+												class="rounded-full border border-slate-900 bg-slate-900 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-white transition hover:bg-slate-700"
+												on:click={() => goToNext(index)}
+											>
+												Next
+											</button>
+										</div>
+									</div>
+								{/if}
+							</figure>
+						{/if}
 					</article>
 				{/each}
 			</div>

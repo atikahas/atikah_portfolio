@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="countdown-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" rx="40" fill="url(#countdown-bg)" />
+  <rect x="140" y="140" width="920" height="440" rx="34" fill="rgba(15,23,42,0.8)" stroke="rgba(251,146,60,0.8)" />
+  <text x="200" y="220" fill="#fed7aa" font-family="Inter, sans-serif" font-size="56" font-weight="700">Product Launch: T-08 Days</text>
+  <rect x="200" y="260" width="760" height="120" rx="26" fill="rgba(251,146,60,0.15)" />
+  <g font-family="Inter, sans-serif" fill="#fff7ed">
+    <text x="230" y="330" font-size="22">We open the beta on 25 May · invites go out to the early list automatically.</text>
+  </g>
+  <g fill="rgba(248,250,252,0.92)" font-family="Inter, sans-serif" font-weight="600" font-size="24">
+    <text x="240" y="420">08</text>
+    <text x="360" y="420">12</text>
+    <text x="480" y="420">47</text>
+    <text x="600" y="420">11</text>
+  </g>
+  <g fill="#f8fafc" font-family="Inter, sans-serif" font-size="14" letter-spacing="4">
+    <text x="232" y="450">DAYS</text>
+    <text x="352" y="450">HRS</text>
+    <text x="472" y="450">MIN</text>
+    <text x="592" y="450">SEC</text>
+  </g>
+  <rect x="200" y="480" width="220" height="60" rx="30" fill="#f97316" />
+  <text x="230" y="520" fill="#0f172a" font-family="Inter, sans-serif" font-size="20" font-weight="700">Notify me</text>
+</svg>
