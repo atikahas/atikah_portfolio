@@ -31,6 +31,7 @@
 		{
 			name: 'Beritafy · News Monitoring',
 			role: 'SvelteKit & data engineer',
+			status: 'Actively upgrading',
 			impact: 'A newsroom console for tracking 30+ Malaysian outlets, mapping keywords to risk levels, and briefing stakeholders via dashboards and email digests.',
 			stack: ['SvelteKit', 'Cloudflare', 'MySQL'],
 			link: 'https://beritafy.pages.dev',
@@ -45,6 +46,7 @@
 		{
 			name: 'AI Creator Studio',
 			role: 'Laravel 12 product engineer',
+			status: 'Actively upgrading',
 			impact: 'Self-serve AI prompt builder for campaign teams with queueing, audit logs, and Cloudflare edge caching so editors can ship visuals in minutes.',
 			stack: ['Laravel 12', 'MySQL', 'Cloudflare'],
 			link: 'https://magika.plitix.com',
@@ -235,6 +237,9 @@
 								{#each project.stack as item}
 									<span class="rounded-full border border-slate-200 px-3 py-1">{item}</span>
 								{/each}
+								{#if project.status}
+									<span class="rounded-full border border-amber-400/40 bg-amber-100/70 px-3 py-1 text-amber-700">{project.status}</span>
+								{/if}
 							</div>
 						</div>
 						<p class="mt-3 text-sm text-slate-600">{project.impact}</p>
