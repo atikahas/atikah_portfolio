@@ -161,10 +161,10 @@
 			<div class="space-y-6">
 				<p class="text-xs font-semibold uppercase tracking-[0.5em] text-slate-500">Full-stack developer · Klang, MY</p>
 				<h1 class="text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl">Builds reliable tools for teams on the ground.</h1>
-				<p class="max-w-xl text-base text-slate-600">
+				<!-- <p class="max-w-xl text-base text-slate-600">
 					I keep product teams and operations groups aligned by shipping practical Laravel and SvelteKit platforms. The goal is always the same: clear data, calm workflows, and
 					results that feel ready for real-world pressure.
-				</p>
+				</p> -->
 				<ul class="space-y-3 text-sm text-slate-600">
 					{#each summaries as item}
 						<li class="flex gap-3">
@@ -225,15 +225,11 @@
 				<h2 class="text-2xl font-semibold text-slate-900">Selected projects</h2>
 				<p class="max-w-2xl text-sm text-slate-600">Real deliverables that moved teams forward.</p>
 			</div>
-			<div class="grid gap-5 md:grid-cols-2">
+			<div class="grid gap-6 md:grid-cols-2">
 				{#each projects as project, index}
-					<article class="rounded-3xl border border-slate-200 bg-white p-5 shadow-sm">
-						<div class="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
-							<div>
-								<h3 class="text-base font-semibold text-slate-900">{project.name}</h3>
-								<p class="text-sm text-slate-500">{project.role}</p>
-							</div>
-							<div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.3em] text-slate-500 md:justify-end">
+					<article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+						<div class="flex flex-col gap-4">
+							<div class="flex flex-wrap gap-2 text-xs uppercase tracking-[0.3em] text-slate-500">
 								{#each project.stack as item}
 									<span class="rounded-full border border-slate-200 px-3 py-1">{item}</span>
 								{/each}
@@ -241,11 +237,15 @@
 									<span class="rounded-full border border-amber-400/40 bg-amber-100/70 px-3 py-1 text-amber-700">{project.status}</span>
 								{/if}
 							</div>
+							<div>
+								<h3 class="text-lg font-semibold text-slate-900">{project.name}</h3>
+								<p class="mt-1 text-sm text-slate-500">{project.role}</p>
+							</div>
 						</div>
-						<p class="mt-3 text-sm text-slate-600">{project.impact}</p>
+						<p class="mt-4 text-sm leading-relaxed text-slate-600">{project.impact}</p>
 						{#if project.link}
 							<a
-								class="mt-3 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-900 hover:underline"
+								class="mt-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-900 hover:underline"
 								href={project.link}
 								target="_blank"
 								rel="noreferrer"
@@ -255,10 +255,10 @@
 							</a>
 						{/if}
 						{#if project.media?.length}
-							<figure class="mt-5 space-y-3">
+							<figure class="mt-6 space-y-3">
 								<div class="relative overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
 									<img
-										class="h-64 w-full object-cover"
+										class="h-72 w-full object-cover object-top"
 										src={project.media[activeSlides[index]]?.src}
 										alt={project.media[activeSlides[index]]?.alt}
 										loading="lazy"
