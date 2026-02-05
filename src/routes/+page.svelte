@@ -49,7 +49,7 @@
 			status: 'Actively upgrading',
 			impact: 'Self-serve AI prompt builder for campaign teams with queueing, audit logs, and Cloudflare edge caching so editors can ship visuals in minutes.',
 			stack: ['Laravel 12', 'MySQL', 'Cloudflare'],
-			link: 'https://magika.plitix.com',
+			link: 'https://magika.helangmas.com',
 			media: [
 				{
 					src: '/selected-project-img/magika.png',
